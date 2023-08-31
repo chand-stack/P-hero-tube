@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
             </div>
           
             <div class="hidden md:contents">
-                <p class=" min-w-fit text-lg font-medium bg-gray-300 py-2 px-5">Sort by view</p>
+                <p onclick="sortBtn()" class=" min-w-fit text-lg font-medium bg-gray-300 py-2 px-5">Sort by view</p>
             </div>
           
             <div class="navbar-end">
@@ -46,7 +46,7 @@
 
         <!-- ------------card section start---------------- -->
         <section>
-            <div id="card-container">
+            <div id="card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-3 px-0 md:px-7 lg:px-11">
 
                 <div class="card card-compact w-96 bg-base-100 shadow-xl">
                     <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
@@ -63,6 +63,18 @@
 
             </div>
         </section>
+<!------------------------card section end------------------- -->
+
+
+<!-- ---------------------no content section start here -->
+        <section id="no-content" class="hidden">
+            <img class="mx-auto mt-20" src="./Icon.png" alt="">
+            <h1 class="text-center font-bold text-4xl">Oops!! Sorry, There is no <br> content here</h1>
+        </section>
+<!--  --------------------no content end here-------------->
+<!-- <section id="badge" class="">
+    <div><i id="badge" class="fa-solid fa-certificate text-blue-600"></i></div>
+</section> -->
     </main>
 
     <footer>
