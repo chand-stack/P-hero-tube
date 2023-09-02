@@ -8,7 +8,7 @@ const allTabs = async () => {
         
         const newTab = document.createElement('a')
         newTab.innerHTML = `
-        <a onclick="cardList(${element.category_id})" class="tab bg-gray-300">${element.category}</a>
+        <button onclick="cardList(${element.category_id})" class="btn btn-sm rounded-none bg-gray-300 focus:bg-red-500 focus:text-white">${element.category}</button>
         `;
         tabContainer.appendChild(newTab)
     }); 
@@ -142,5 +142,7 @@ cardContainer.appendChild(newCard)
     
     }
 
-    // console.log(details)
+document.getElementById('blog-btn').addEventListener('click', function(){
+    document.location.href = 'http://127.0.0.1:5500/blog.html';
+})
     

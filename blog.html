@@ -10,10 +10,56 @@
 <body>
     <main class="container mx-auto">
 
-    <section class="bg-yellow-200 px-5">
+    <section class="bg-yellow-200 px-5 py-10">
         <h1 class="text-3xl md:text-6xl font-semibold text-center">Scope of var, let, and const</h1>
         <img class="mx-auto mt-7" src="./javascript-var-let-const.png" alt="">
-        <p>We all devs know that there are many upgraded feature comes with ES6 ,  </p>
+        <p class="text-2xl font-medium w-3/4 md:w-1/2 mx-auto py-7">We all devs know that there are many upgraded feature comes with ES6, Develepers are become familiar with these amazing features.... <br>Scope means where these <i>(var,let,const)</i> variables are available for use.</p>
+<hr class="pb-4">
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="border-2 border-black p-1">
+                <p class="text-3xl font-semibold text-center underline">var</p>
+                <p class="text-2xl font-medium text-center">var is a globally scoped variable. The scope is global when it's declared without or outside of a function. That means any kind of var variable available for use in whole window. But if it's in a function then we can access only within that function, because var is function scoped... </p>
+            </div>
+            <div class="border-2 border-black p-1">
+                <p class="text-3xl font-semibold text-center underline">let</p>
+                <p class="text-2xl font-medium text-center">let is block scope. Block means codes in a {} <i>curly braces.</i> Any code in curly braces is block. So variable declare with let in a block, will only work in that block not outside the block. let variable values are can be updated but not redeclared...</p>
+            </div>
+            <div class="border-2 border-black p-1">
+                <p class="text-3xl font-semibold text-center underline">const</p>
+                <p class="text-2xl font-medium text-center">Variable declaring with const mean maintaining constant values. const is also a block scope like let. let and const have some similarity, but const can not be updated and redeclared. That means if we declare any value with const it can not be change or redeclared...</p>
+            </div>
+        </section>
+<hr class="my-3">
+        <h1 class="text-3xl md:text-6xl font-semibold text-center mt-7">The use cases of null and undefined</h1>
+<img class="mx-auto h-auto md:h-96 my-4" src="./nullvsundefinedinJavascript1.png" alt="">
+<p class="text-2xl font-medium w-3/4 md:w-1/2 mx-auto py-7"><b>Undefined</b> means variable is declared but the value is not assigned or value is not valid, And <b>Null</b> means declared variable have no value or the value is empty.</p>
+<hr class="pb-4">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+    <div class="border-2 border-black p-1">
+        <p class="text-3xl font-semibold text-center underline">Undefined</p>
+        <p class="text-2xl font-medium text-center">Undefined means <b>not defined</b> When we declare a variable but we dont put any value or the value is not valid, it will return <b>undefined</b>. Also if we create a function but do not pass the arguments for parameters of the default value taken as <b>undefined</b>.... </p>
+    </div>
+    <div class="border-2 border-black p-1">
+        <p class="text-3xl font-semibold text-center underline">Null</p>
+        <p class="text-2xl font-medium text-center">Null means <b>having no value</b>. <b>Null</b> is an assigment value to a variable. The variable value with <b>null</b> means contains no value. When we assign <b>null</b> as a value to any variable, that means its empty or blank. Null is an object in JavaScript...</p>
+    </div>
+
+</section>
+<hr class="my-3">
+
+<h1 class="text-3xl md:text-6xl font-semibold text-center mt-7">WHAT IS A REST API ?</h1>
+<img class="mx-auto h-auto md:h-96 my-4" src="./restapi.png" alt="">
+<p class="text-2xl font-medium w-3/4 md:w-1/2 mx-auto py-7">A <b>REST API</b> is an <b>API</b> that conforms to the design principles of the <b>REST</b>, or representational state transfer architectural style. <b>REST API</b> is a way of accessing web services more simple and flexible way without having any processing.</p>
+
+<p class="text-2xl font-medium w-3/4 md:w-1/2 mx-auto py-2">
+    A request is sent from client to server in the form of a web URL as HTTP GET or POST or PUT or DELETE request. After that, a response comes back from the server in the form of a resource which can be anything like HTML, XML, Image, or JSON. But now JSON is the most popular format being used in Web Services.
+</p>
+
+<p class="text-2xl font-medium w-3/4 md:w-1/2 mx-auto py-2">
+    In HTTP there are five methods that are commonly used in a REST-based Architecture i.e., <b>POST</b>, <b>GET</b>, <b>PUT</b>, <b>PATCH</b>, and <b>DELETE</b>. These correspond to create, read, update, and delete (or <b>CRUD</b>) operations respectively. There are other methods which are less frequently used like OPTIONS and HEAD. 
+</p>
+
     </section>
 
     </main>
